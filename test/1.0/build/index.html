@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>项目名称</title>
+    <meta name="keywords" content="&#x9879;&#x76EE;&#x5173;&#x952E;&#x8BCD;">
+    <meta name="description" content="&#x9879;&#x76EE;&#x63CF;&#x8FF0;">
+    <!--<script src="http://manage.dejiapp.com/server/login"></script>-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<!-- 需要构建的前景图片，需要设置baseurl，默认./assets/就可以，不需要构建的资源不需要加baseurl -->
+<img src="./assets/images/space.png" data-src="./assets/images/space.png" height="1" width="1" alt="">
+
+<div style="background: url(./assets/images/space.png) 0 0 no-repeat;"></div>
+
+<div ng-app="test" ng-controller="customersCtrl">
+    <ul>
+        <li ng-repeat="x in names">
+            {{x.result+'+'+x.code}}
+        </li>
+    </ul>
+</div>
+
+<script src="http://static.dejiapp.com/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="./assets/js/angular.min.js"></script>
+<script src="./assets/js/js.js"></script>
+
+</html>
