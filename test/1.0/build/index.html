@@ -16,8 +16,8 @@
 
 <div ng-app="test" ng-controller="customersCtrl">
     <ul>
-        <li ng-repeat="x in names">
-            {{x.result+'+'+x.code}}
+        <li ng-repeat="x in login">
+            {{'是否登录：'+login.result+','+'错误状态：'+login.code}}
         </li>
     </ul>
 </div>

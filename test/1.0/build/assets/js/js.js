@@ -14,8 +14,10 @@
 
     var app = angular.module('test',[])
     app.controller('customersCtrl', function ($scope, $http) {
-        $http.get('http://manage.dejiapp.com/server/login').success(function (data) {
-            console.log(data)
+        $http.get('http://manage.dejiapp.com/server/login').success(function (res) {
+            console.log(res)
+            $scope.login=res
+            console.log($scope.login)
         }).error(function () {
             console.log('angular失败')
         })
